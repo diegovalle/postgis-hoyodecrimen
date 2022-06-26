@@ -2,7 +2,7 @@ FROM postgis/postgis:14-3.2
 ENV POSTGRES_USER=deploy
 ENV POSTGRES_DB=apihoyodecrimen
 COPY init.sh /docker-entrypoint-initdb.d/
-RUN chown 999 -R /var/lib/postgresql/data
+# RUN chown 999 -R /var/lib/postgresql/data
 USER 999
 # ENV POSTGRES_PASSWORD=
 # ENV BACKUP_USER_PASSWORD=
